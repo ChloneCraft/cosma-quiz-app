@@ -113,18 +113,21 @@ footer {
     height: 100%;
     border-top: solid 2px black;
 }
-.footer__nav button {
+.footer__nav a {
     border-right: solid 2px black;
     flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
-.footer__nav button:last-child {
+.footer__nav a:last-child {
     border-right: none;
 }
 .active {
     background-color: #135750;
     border-style: inset #135750;
 }
-.footer__nav button a {
+.footer__nav a {
     text-decoration: none;
     color: black;
 }
