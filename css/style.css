@@ -1,25 +1,37 @@
+:root {
+    --standard-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --answer-font-size: 30px;
+    --background-color: #1c8177f6;
+    --primary-color: #ebbe38;
+    --secondary-color: #F24C3D;
+}
+
 * {
     margin: 0;
 }
 body {
-    background-color: 22A699;
+    background-color: var(--background-color);
+}
+button {
+    background-color: transparent;
+    border: none;
 }
 .main__question-card__tag-wrapper li{
     list-style-type: none;
 }
 .header__app-title {
-    padding: 2em;
-    border-bottom: solid 4px rgb(15, 15, 15)
+    padding: 20vw;
+    border-bottom: solid 4px black
 }
 header h1 {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 45px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header h1 {
-    color: greenyellow;
-    transition: ease-in 2s;
+    color: var(--primary-color);
+    transition: ease-in 0.5s;
 }
 main {
     display: flex;
@@ -29,7 +41,7 @@ main {
 .main__question-card {
     border: solid 1px black;
     border-radius: 8px;
-    margin: 4vw;
+    margin: 5vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -44,6 +56,64 @@ main {
 .main__question-card__question {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10vw;
+    color: rgba(8, 8, 8, 0.849);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.main__question-card__show-answer {
+    border: solid 3px black;
+    margin: 0px  30px 30px 30px;
+    font-size: var(--answer-font-size);
+    font-family: var(--standard-font);
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 50vw;
+    height: 8vh;
+    border-radius: 8px;
+}
+.main__question-card__tag-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 4vw;
+    gap: 7px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-family: var(--standard-font);
+}
+.main__question-card__tag-wrapper li {
+    color: #F29727;
+    border: solid 1px #F29727;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 11px;
+}
+.main__question-card__answer {
+    margin: 10px;
+    color: var(--primary-color);
+}
+#two {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #135750;
+    width: 100vw;
+    height: 10vh;
+}
+.footer__nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-top: solid 2px black;
+}
+.footer__nav button {
+    border-right: solid 2px black;
+    flex-grow: 1;
+}
+.footer__nav button:last-child {
+    border-right: none;
 }
