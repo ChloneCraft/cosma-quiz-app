@@ -1,0 +1,74 @@
+@import url(./general.css);
+.main__profile-info__name-img img {
+    border-radius: 100%;
+    width: 30vw;
+    height: 30vw;
+}
+.main__profile-info__name-img h2 {
+    font-family: var(--standard-font);
+    font-size: 27px;
+    max-width: 30vw;
+    display: inline-block;
+}
+.main__profile-info__name-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+}
+.main__profile-info__profile-text {
+    font-family: var(--standard-font);
+    /* margin-top: 5vh;
+    padding-right: 5vw;
+    padding-left: 5vw; */
+}
+.main__profile-info__about-me {
+    margin-top: 5vh;
+    
+}
+main {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-bottom: 15vh;
+}
+h3 {
+    font-family: var(--standard-font);
+    font-size: 23px;
+    margin-bottom: 1vh;
+    text-decoration: underline;
+}
+.main__profile-statistics span {
+    border-radius: 10px;
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15vw;
+    height: 3vh;
+    padding: 5px;
+    font-family: var(--standard-font);
+    font-size: 2.5vh;
+}
+.main__profile-statistics {
+    display: flex;
+    margin-top: 5vh;
+    gap: 20vw;
+    justify-content: center;
+}
+.main__profile-settings {
+    margin-top: 5vh;
+}
+.main__profile-settings__showcase-setting img {
+    width: 50px;
+}
+.main__profile-settings__showcase-setting {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+input {
+    width: 20px;
+    margin-right: 10px;
+}

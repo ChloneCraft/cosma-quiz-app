@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/general.css">
     <title>Animal Quiz</title>
 </head>
 <body>
@@ -12,19 +13,42 @@
     </header>
   
     <main>
+        <section class="main__profile-info">
+            <section class="main__profile-info__name-img">
+                <img src="./images/example.png" alt="example-image">
+                <h2>Max Doe</h2>
+            </section>
+            <section class="main__profile-info__about-me">
+                <h3>About Me</h3>
+                <p class="main__profile-info__profile-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro ipsam aperiam quod consequatur odit architecto, sapiente sunt non eius magni eum, perferendis vel doloribus doloremque nobis atque, maiores deserunt. Nulla tempora perferendis sint sunt nesciunt. Officia dolor qui accusamus, adipisci expedita earum autem labore quisquam.</p>
+            </section>
+        </section>
+        <section class="main__profile-statistics">
+            <span class="main__profile-statistics__counter-questions"><img style="width: 15px; height:15px;" src="./images/question.png" alt="">12</span>
+            <span class="main__profile-statistics__counter-bookmarks"><img style="width: 15px; height:15px;" src="./images/bookmark_filled.png" alt="">4</span>
+
+        </section>
+        <section class="main__profile-settings">
+            <h3>Settings</h3>
+            <section class="main__profile-settings__showcase-setting">
+                <h4>Dark Mode</h4>
+                <input type="checkbox">
+            </section>
+
+        </section>
         
     </main>
 
     <footer>
         <nav class="footer__nav">
             <a href="./index.html" class="footer__nav__questions ">
-                Q
+                <img src="./images/home.png" alt="home">
             </a>
             <a href="./bookmarks.html" class="footer__nav__bookmarks">
-                B
+                <img src="./images/bookmark_transparent.png" alt="home">
             </a>
             <a class="footer__nav__profile active" name="go to profile">
-                P
+                <img src="./images/profile_filled.png" alt="home">
             </a>
         </nav>
 
