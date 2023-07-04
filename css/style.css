@@ -102,7 +102,7 @@ main {
 footer {
     position: fixed;
     bottom: 0;
-    background-color: #135750;
+    background-color: var(--background-color);
     width: 100vw;
     height: 10vh;
 }
@@ -118,4 +118,12 @@ footer {
 }
 .footer__nav button:last-child {
     border-right: none;
+}
+.active {
+    background-color: #135750;
+    border-style: inset #135750;
+}
+.footer__nav button a {
+    text-decoration: none;
+    color: black;
 }
