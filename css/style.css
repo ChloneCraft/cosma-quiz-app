@@ -4,6 +4,7 @@
     --background-color: #1c8177f6;
     --primary-color: #ebbe38;
     --secondary-color: #F24C3D;
+    --third-color: #F29727;
 }
 
 * {
@@ -37,6 +38,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 10vh;
 }
 .main__question-card {
     border: solid 1px black;
@@ -83,8 +85,8 @@ main {
     font-family: var(--standard-font);
 }
 .main__question-card__tag-wrapper li {
-    color: #F29727;
-    border: solid 1px #F29727;
+    color: black;
+    background-color: var(--third-color);
     border-radius: 6px;
     padding: 5px;
     font-size: 11px;
