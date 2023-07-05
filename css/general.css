@@ -70,3 +70,6 @@ footer {
     width: 10vw;
     height: 10vw;
 }
+.main__question-card__answer {
+    visibility: hidden;
+}
