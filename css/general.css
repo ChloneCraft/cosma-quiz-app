@@ -60,7 +60,9 @@ footer {
 }
 .active {
     background-color: #135750;
-    border-style: inset #135750;
+    border-radius: none;
+    border-style: none;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.466);
 }
 .footer__nav a {
     text-decoration: none;
