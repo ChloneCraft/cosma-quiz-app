@@ -1,7 +1,7 @@
 :root {
     --standard-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --answer-font-size: 30px;
-    --background-color: #1c8177f6;
+    --background-color: #1c8177;
     --primary-color: #ebbe38;
     --secondary-color: #F24C3D;
     --third-color: #F29727;
@@ -15,17 +15,25 @@ body {
 }
 .header__app-title {
     padding: 20vw;
-    border-bottom: solid 4px black
+    padding-bottom: 15vw;
+    /* border-bottom: solid 4px black */
 }
-header h1 {
+header {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 45px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+}
+header div {
+    border: solid 2px black;
+    width: 80vw;
+    margin-bottom: 8vw;
 }
 header h1 {
     color: var(--primary-color);
-    transition: ease-in 0.5s;
+    font-size: 45px;
 }
 footer {
     position: fixed;
