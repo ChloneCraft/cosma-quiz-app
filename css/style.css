@@ -14,6 +14,7 @@ main {
 }
 .main__question-card {
     border: solid 1px black;
+    background-color: #ffffff71;
     border-radius: 8px;
     margin: 5vw;
     position: relative;
@@ -40,11 +41,12 @@ main {
     text-align: center;
 }
 .main__question-card__show-answer {
-    border: solid 3px black;
+    border: solid 3px var(--primary-color);
     margin: 0px  30px 30px 30px;
     font-size: var(--answer-font-size);
     font-family: var(--standard-font);
     color: black;
+    background-color: var(--primary-color);
     font-weight: 600;
     letter-spacing: 2px;
     width: 50vw;
@@ -71,8 +73,8 @@ main {
     margin: 10px;
     color: var(--primary-color);
 }
-#two {
+.revealed {
+    background-color: transparent;
     color: black;
-    border-color: var(--primary-color);
-    background-color: var(--primary-color);
+    border-color: black;
 }

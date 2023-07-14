@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/general.css">
+    <script src="./javascript/index.js"></script>
     <title>Animal Quiz</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
     </header>
   
     <main>
-        <section class="main__question-card">
+        <section id="1" class="main__question-card">
             <button class="main__question-card__bookmark"><img src="./images/bookmark_filled.png" alt="Bookmark"></button>
             <h2 class="main__question-card__question">Which animal species can live in extremes of both heat and cold, from -20 °F to 120 °F?</h2>
-            <button class="main__question-card__show-answer">
+            <button onclick="showAnswer(1)" class="main__question-card__show-answer">
                 ANSWER
             </button>
             <h3 class="main__question-card__answer">Bactrian Camel</h3>
@@ -28,16 +29,16 @@
             </ul>
         </section>
 
-        <section class="main__question-card">
+        <section id="2" class="main__question-card">
             <img src="./images/bookmarkBackgroundColor.png" alt="Bookmark" class="main__question-card__bookmark">
             <h2 class="main__question-card__question">
                 Growing up to 59 feet (18 meters) long, which is the world's largest living fish?
             </h2>
-            <button class="main__question-card__show-answer" id="two">
+            <button onclick="showAnswer(2)" class="main__question-card__show-answer" id="two">
                 ANSWER
             </button>
             <h3 class="main__question-card__answer">
-                <!-- Whale Shark -->
+                Whale Shark
             </h3>
             <ul class="main__question-card__tag-wrapper">
                 <li>#fish</li>
@@ -46,12 +47,12 @@
             </ul>
         </section>
 
-        <section class="main__question-card">
+        <section id="3" class="main__question-card">
             <img src="./images/bookmarkBackgroundColor.png" alt="Bookmark" class="main__question-card__bookmark">
             <h2 class="main__question-card__question">
                 What gives flamingos their pink color?
             </h2>
-            <button class="main__question-card__show-answer">
+            <button onclick="showAnswer(3)" class="main__question-card__show-answer">
                 ANSWER
             </button>
             <h3 class="main__question-card__answer">Eating shrimp</h3>
