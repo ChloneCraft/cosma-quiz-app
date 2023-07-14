@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <script src="./javascript/form.js" defer></script>
+    <title>Animal Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header__app-title">Animal-Quiz</h1>
+      <div></div>
+    </header>
+
+    <main>
+      <form action="" class="addCardForm">
+        <label for="yourQuestion">Your Question:</label>
+        <div class="inputWrapper">
+          <textarea
+            id="yourQuestion"
+            name="yourQuestion"
+            rows="4"
+            cols="25"
+            maxlength="150"
+          ></textarea>
+          <span class="questionCharactersLeft">150 characters left</span>
+        </div>
+        <label for="yourAnswer">Your Answer:</label>
+        <div class="inputWrapper">
+          <textarea
+            id="yourAnswer"
+            name="yourAnswer"
+            rows="4"
+            cols="25"
+            maxlength="150"
+          ></textarea>
+          <span class="answerCharactersLeft">150 characters left</span>
+        </div>
+        <label for="tags">Tags:</label>
+        <input type="text" name="tags" id="tags" />
+        <button type="submit" class="submitButton">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <nav class="footer__nav">
+        <a href="./index.html" class="footer__nav__questions">
+          <img src="./images/home.png" alt="home" />
+        </a>
+        <a href="./bookmarks.html" class="footer__nav__bookmarks">
+          <img src="./images/bookmark_transparent.png" alt="home" />
+        </a>
+        <a href="./form.html" class="footer__nav__form active">
+          <img src="./images/add_filled.png" alt="home" />
+        </a>
+        <a
+          href="./profile.html"
+          class="footer__nav__profile"
+          name="go to profile"
+        >
+          <img src="./images/profile.png" alt="home" />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
