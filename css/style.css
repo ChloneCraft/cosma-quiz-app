@@ -27,6 +27,7 @@ main {
   position: absolute;
   top: -10px;
   right: 15px;
+  /* transition: var(--transition-standard); */
 }
 .main__question-card img {
   width: 10vw;
@@ -80,4 +81,24 @@ main {
 }
 .bookmarked {
   content: url("../images/bookmark_filled.png");
+  /* box-shadow: red 0 0 20px 20px;
+  background-color: red; */
+  border-radius: 0%;
+  animation: bookmarked 0.5s;
+  border-radius: 8px;
+}
+/* .notBookmarked {
+  animation: bookmarked 0.5s;
+} */
+
+@keyframes bookmarked {
+  0% {
+  }
+  50% {
+    transform: scale(1.2);
+    /* box-shadow: rgba(0, 0, 0, 0.2) 2px 2px; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+  }
+  0% {
+  }
 }

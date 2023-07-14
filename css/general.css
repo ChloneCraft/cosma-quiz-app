@@ -3,13 +3,17 @@
     sans-serif;
   --answer-font-size: 25px;
   --background-color: #1c8177;
+  --background-color-dark: #0e3f3a;
   --primary-color: #ebbe38;
   --secondary-color: #f24c3d;
   --third-color: #f29727;
+  --text-color: #000000;
+  --transition-standard: all 0.5s ease-in;
 }
 * {
   margin: 0;
   font-family: var(--standard-font);
+  color: var(--text-color);
 }
 body {
   background-color: var(--background-color);
