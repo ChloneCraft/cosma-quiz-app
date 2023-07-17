@@ -1,0 +1,43 @@
+@import url(./general.css);
+@import url(./style.css);
+.addCardForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  font-size: 25px;
+}
+#yourQuestion,
+#yourAnswer,
+#tags {
+  margin-top: 3vw;
+  width: 90vw;
+}
+.submitButton {
+  width: 50vw;
+  margin-top: 2vw;
+}
+main {
+  margin-bottom: 10vh;
+}
+.bookmarked {
+  content: url("../images/bookmark_filled.png");
+}
+.questionCharactersLeft,
+.answerCharactersLeft {
+  font-size: 15px;
+  align-self: flex-end;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.submitButton {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  width: 40vw;
+  height: 12vw;
+  margin-top: 2vh;
+}
