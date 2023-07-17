@@ -19,8 +19,12 @@ function showAnswer(event) {
   const visible = showAnswerButton.classList.contains("revealed")
     ? "visible"
     : "";
-
-  answer.style.visibility = visible;
+  if (visible) {
+    answer.classList.add("revealAnswer");
+  } else {
+    answer.classList.remove("revealAnswer");
+  }
+  // answer.style.visibility = visible;
 }
 
 function toggleBookmark(event) {

@@ -73,6 +73,17 @@ main {
 .main__question-card__answer {
   margin: 10px;
   color: var(--primary-color);
+  font-size: 5px;
+  opacity: 0;
+  padding: 5%;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+.revealAnswer {
+  font-size: var(--answer-font-size);
+  opacity: 1;
+  transition: all 0.7s ease-in;
+  /* background-color: rgba(0, 0, 0, 0.411); */
 }
 .revealed {
   background-color: transparent;

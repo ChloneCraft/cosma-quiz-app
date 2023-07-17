@@ -1,19 +1,8 @@
 const form = document.querySelector(".addCardForm");
 const questionInputField = document.querySelector("#yourQuestion");
 const answerInputField = document.querySelector("#yourAnswer");
-// const questionCharactersLeft = document.querySelector(
-//   ".questionCharactersLeft"
-// );
-// const answerCharactersLeft = document.querySelector(".answerCharactersLeft");
+const tagInput = document.querySelector("#tags");
 
-// questionInputField.addEventListener("input", () => {
-//   questionCharactersLeft.textContent =
-//     150 - questionInputField.value.length + " characters left";
-// });
-// answerInputField.addEventListener("input", () => {
-//   answerCharactersLeft.textContent =
-//     150 - answerInputField.value.length + " characters left";
-// });
 answerInputField.addEventListener("input", (event) => {
   updateCharactersLeft(event.target);
 });
@@ -24,7 +13,19 @@ questionInputField.addEventListener("input", (event) => {
 function updateCharactersLeft(field) {
   field.parentElement.querySelector("span").textContent =
     150 - field.value.length + " characters left";
+  if (field.value.length == 150) {
+    field.parentElement.querySelector("span").style.color = "red";
+  }
 }
+
+//tag input
+
+// tagInput.addEventListener("input", (event) => {
+//   if (event.data == )
+//   console.log(event.data);
+// });
+
+//tag input
 
 //---------------------
 
@@ -70,6 +71,11 @@ form.addEventListener("submit", (event) => {
     tagsInput
   );
   form.reset();
+
+  questionInputField.parentElement.querySelector("span").textContent =
+    150 + " characters left";
+  answerInputField.parentElement.querySelector("span").textContent =
+    150 + " characters left";
 
   createDomElement(questionInput, answerInput, tagsInput);
 });
