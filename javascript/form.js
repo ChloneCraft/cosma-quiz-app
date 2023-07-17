@@ -29,6 +29,27 @@ function updateCharactersLeft(field) {
 
 //---------------------
 
+// function revealAnswer(event) {
+//   const answer = event.target.parentElement.querySelector(
+//     ".main__question-card__answer"
+//   );
+
+//   const showAnswerButton = event.target;
+
+//   showAnswerButton.classList.toggle("revealed");
+
+//   if (showAnswerButton.classList.contains("revealed")) {
+//     showAnswerButton.innerHTML = "Hide Answer";
+//   } else {
+//     showAnswerButton.innerHTML = "Show Answer";
+//   }
+
+//   const visible = showAnswerButton.classList.contains("revealed")
+//     ? "visible"
+//     : "";
+
+//   answer.style.visibility = visible;
+// }
 function revealAnswer(event) {
   const answer = event.target.parentElement.querySelector(
     ".main__question-card__answer"
@@ -47,8 +68,11 @@ function revealAnswer(event) {
   const visible = showAnswerButton.classList.contains("revealed")
     ? "visible"
     : "";
-
-  answer.style.visibility = visible;
+  if (visible) {
+    answer.classList.add("revealAnswer");
+  } else {
+    answer.classList.remove("revealAnswer");
+  }
 }
 
 //---------------------
